@@ -1,0 +1,110 @@
+.experiencia {
+    // background: linear-gradient(to bottom, rgba(black, .8) 0%, rgba(black, .5) 100%), url(../img/01.jpg);
+    // background-image: url(../img/01.jpg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: scroll;
+    // background-color: #222627;
+    &__container {
+        &--title {
+            font-family: $font-roboto;
+            text-transform: uppercase;
+            font-size: 4rem;
+            letter-spacing: .2rem;
+            // color: white;
+            // color: black;
+            color: #e74c3c;
+            text-align: center;
+        }
+        &__imgbox {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__item {
+                width: calc(25% - 9rem / 4);
+                height: 30rem;
+                position: relative;
+                overflow: hidden;
+                transition: all .3s;
+                border-radius: 2rem;
+                box-shadow: 0 10px 30px rgba(black, .15);
+                // &::before {
+                //     position: absolute;
+                //     content: "";
+                //     width: 100%;
+                //     height: 100%;
+                //     background-color: rgba(black, .6);
+                //     top: 0;
+                //     left: 0;
+                //     opacity: 0;
+                // }
+                @media only screen and (max-width: $bp-large) {
+                    width: calc(100% / 3 - 6rem / 3);
+                    height: 25rem;
+                }
+                @media only screen and (max-width: $bp-medium) {
+                    width: calc(50% - 1.5rem);
+                    height: 30rem;
+                }
+                @media only screen and (max-width: $bp-small) {
+                    width: 100%;
+                }
+                &--title {
+                    position: absolute;
+                    top: -100%;
+                    color: white;
+                    font-family: $font-roboto;
+                    width: 100%;
+                    text-align: center;
+                    text-transform: capitalize;
+                    font-size: 1.8rem;
+                }
+                &--link {
+                    position: absolute;
+                    bottom: -100%;
+                    font-weight: 600;
+                    border-radius: 1rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #e74c3c;
+                    color: white;
+                    padding: 1rem 2rem 1.3rem 2rem;
+                    font-size: 1.6rem;
+                    font-family: $font-lato;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: #c0392b;
+                        transition: all .3s;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(100%);
+                    -webkit-filter: grayscale(100%);
+                }
+            }
+            &__item:hover {
+                &::before {
+                    opacity: 1;
+                    transition: all .3s;
+                }
+                .experiencia__container__imgbox__item--title {
+                    top: 40%;
+                    transition: all .3s;
+                }
+                .experiencia__container__imgbox__item--link {
+                    bottom: 25%;
+                    transition: all .3s;
+                }
+                img {
+                    transition: all .3s;
+                    filter: none;
+                }
+            }
+        }
+    }
+}

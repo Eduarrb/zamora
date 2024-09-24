@@ -1,0 +1,37 @@
+$bp-extraLarge: 75em;
+$bp-large: 62em;
+$bp-medium: 48em;
+$bp-small: 36em;
+$bp-extraSmall: 30em;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    @media only screen and (max-width: $bp-small) {
+        font-size: 50%;
+    }
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+}

@@ -1,0 +1,37 @@
+.nosotros {
+    // background-image: url(../img/za01.png);
+    // background-position: center;
+    // background-size: cover;
+    &__container {
+        display: flex;
+        justify-content: end;
+        @media only screen and (max-width: $bp-large) {
+            justify-content: center;
+        }
+        &__box {
+            width: 60%;
+            border-radius: 3rem;
+            padding: 3rem 2rem;
+            @media only screen and (max-width: $bp-large) {
+                width: 100%;
+            }
+            &--title {
+                font-family: $font-roboto;
+                font-size: 4rem;
+                text-transform: uppercase;
+                color: #e74c3c;
+                letter-spacing: .2rem;
+            }
+            &--line {
+                width: 60%;
+                border-color: rgba(black, .2);
+            }
+            &--text {
+                font-family: $font-lato;
+                font-size: 2rem;
+                // color: white;
+                line-height: 4rem;
+            }
+        }
+    }
+}

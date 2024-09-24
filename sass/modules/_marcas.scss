@@ -1,0 +1,35 @@
+.marcas {
+    background-color: rgba(black, .9);
+    &--title {
+        font-size: 4rem;
+        text-align: center;
+        font-family: $font-roboto;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        color: white;
+        span {
+            color: #e74c3c;
+        }
+    }
+    &__box {
+        // overflow-x: hidden;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        // display: grid;
+        // grid-auto-flow: column;
+        // grid-auto-columns: calc((100% - (1.5rem * 2)) / 8);
+        // grid-gap: 1.5rem;
+        &__imgbox {
+            // border: 1px solid black;
+            width: 20rem;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
