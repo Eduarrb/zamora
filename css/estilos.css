@@ -762,12 +762,13 @@ img {
 }
 @media only screen and (max-width: 62em) {
   .experienciaModal__box {
-    height: 70%;
+    height: 52%;
   }
 }
 @media only screen and (max-width: 48em) {
   .experienciaModal__box {
     flex-direction: column;
+    height: 70%;
   }
 }
 .experienciaModal__box__col {
@@ -779,15 +780,18 @@ img {
   background-color: #ecf0f1;
   border-radius: 0 2rem 2rem 0;
 }
-@media only screen and (max-width: 48em) {
-  .experienciaModal__box__col {
-    width: 100%;
-  }
-  .experienciaModal__box__col:first-child {
-    height: 35%;
-  }
+@media only screen and (max-width: 62em) {
   .experienciaModal__box__col:nth-child(2) {
     overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .experienciaModal__box__col {
+    height: 50%;
+    width: 100%;
+  }
+  .experienciaModal__box__col:nth-child(2) {
+    border-radius: 0 0 2rem 2rem;
   }
 }
 .experienciaModal__box__col__blank {
@@ -811,17 +815,33 @@ img {
   z-index: 3;
   justify-content: center;
 }
+@media only screen and (max-width: 48em) {
+  .experienciaModal__box__col__imgbox {
+    margin-top: -9rem;
+    gap: 1rem;
+  }
+}
 .experienciaModal__box__col__imgbox__item {
   width: 10rem;
   height: 10rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
+@media only screen and (max-width: 48em) {
+  .experienciaModal__box__col__imgbox__item {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+  }
+}
 .experienciaModal__box__col__imgbox__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   border-radius: unset;
+}
+@media only screen and (max-width: 48em) {
+  .experienciaModal__box__col__imgbox__item img {
+    border-radius: 50%;
+  }
 }
 .experienciaModal__box__col__imgbox__item.active {
   position: absolute;
@@ -833,9 +853,15 @@ img {
   border: none;
   transition: all 0.5s;
   transform-origin: bottom;
+  z-index: -1;
 }
 .experienciaModal__box__col__imgbox__item.active img {
   border-radius: 2rem 0 0 2rem;
+}
+@media only screen and (max-width: 48em) {
+  .experienciaModal__box__col__imgbox__item.active img {
+    border-radius: 2rem 2rem 0 0;
+  }
 }
 .experienciaModal__box__col--title {
   font-family: "Roboto", sans-serif;
