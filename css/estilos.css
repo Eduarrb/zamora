@@ -750,7 +750,6 @@ img {
 .experienciaModal__box {
   width: 70%;
   height: 60%;
-  background-color: #ecf0f1;
   border-radius: 2rem;
   display: flex;
   align-items: center;
@@ -774,6 +773,11 @@ img {
 .experienciaModal__box__col {
   width: 50%;
   height: 100%;
+  position: relative;
+}
+.experienciaModal__box__col:nth-child(2) {
+  background-color: #ecf0f1;
+  border-radius: 0 2rem 2rem 0;
 }
 @media only screen and (max-width: 48em) {
   .experienciaModal__box__col {
@@ -786,6 +790,11 @@ img {
     overflow-y: scroll;
   }
 }
+.experienciaModal__box__col__blank {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
 .experienciaModal__box__col img {
   width: 100%;
   height: 100%;
@@ -796,6 +805,37 @@ img {
   .experienciaModal__box__col img {
     border-radius: 2rem 2rem 0 0;
   }
+}
+.experienciaModal__box__col__imgbox {
+  display: flex;
+  z-index: 3;
+  justify-content: center;
+}
+.experienciaModal__box__col__imgbox__item {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.experienciaModal__box__col__imgbox__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: unset;
+}
+.experienciaModal__box__col__imgbox__item.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+.experienciaModal__box__col__imgbox__item.active img {
+  border-radius: 2rem 0 0 2rem;
 }
 .experienciaModal__box__col--title {
   font-family: "Roboto", sans-serif;

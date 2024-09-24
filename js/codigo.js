@@ -5,6 +5,19 @@ const menu = document.querySelector('.header__nav__menu');
 const iconMenu = document.querySelector('.header__nav__iconMenu');
 const menuContainer = document.querySelector('.header__nav__menu__container');
 
+const modalImgBox = document.querySelector('.experienciaModal__box__col__imgbox');
+
+modalImgBox.addEventListener('click', e => {
+    Array.from(modalImgBox.children).forEach(i => {
+        i.classList.remove('active');
+    });
+    console.log(e);
+    if(e.target.tagName === 'IMG') {
+        console.log('hiciste click')
+        e.target.parentElement.classList.add('active');
+    }
+})
+
 iconMenu.addEventListener('click', () => {
     iconMenu.classList.toggle('active');
     menuContainer.classList.toggle('active');
