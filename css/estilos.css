@@ -824,12 +824,11 @@ img {
 .experienciaModal__box__col__imgbox__item {
   width: 10rem;
   height: 10rem;
-  border: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 @media only screen and (max-width: 48em) {
   .experienciaModal__box__col__imgbox__item {
-    border: 2px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
     border-radius: 50%;
     width: 7rem;
     height: 7rem;

@@ -88,10 +88,11 @@
                 &__item {
                     width: 10rem;
                     height: 10rem;
-                    border: 1px solid rgba(black, .3);
+                    // border: 1px solid rgba(black, .3);
                     cursor: pointer;
                     @media only screen and (max-width: $bp-medium) {
-                        border: 2px solid rgba(black, .6);
+                        // border: 2px solid rgba(black, .6);
+                        box-shadow: 0 0 20px rgba(black, .9);
                         border-radius: 50%;
                         width: 7rem;
                         height: 7rem;
