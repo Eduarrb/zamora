@@ -1,0 +1,58 @@
+{
+    "experiencias": [
+        {
+            "id": 1,
+            "nombre": "Gianmarco",
+            "descripcion": "Tuvo un escenario con el formato 360º, una propuesta innovadora en nuestro País el cual permite que el público pueda disfrutar el concierto de todos los ángulos",
+            "img01": "exp10.jpg",
+            "img02": "exp11.jpg",
+            "img03": "exp12.jpg",
+            "img04": "exp13.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Sam Smith",
+            "descripcion": "Tuvo el escenario más grande hasta ahora hecho en el Perú de 31 mt en el Estadio Nacional",
+            "img01": "exp14.jpg",
+            "img02": "exp15.jpg",
+            "img03": "exp16.jpg",
+            "img04": "exp17.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Lima Music Fest",
+            "descripcion": "Tuvo el escenario más grande hasta ahora hecho en el Perú de 31 mt en el Estadio Nacional",
+            "img01": "exp18.jpg",
+            "img02": "exp19.jpg",
+            "img03": "exp20.jpg",
+            "img04": "exp21.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Escenario Kjarkas - Dibos",
+            "descripcion": "Escenario con el formato 360º",
+            "img01": "exp22.jpg",
+            "img02": "exp23.jpg",
+            "img03": "exp24.jpg",
+            "img04": "exp25.jpg"
+        },
+        {
+            "id": 5,
+            "nombre": "Faraway 2024",
+            "descripcion": "Escenario con el formato 360º",
+            "img01": "exp26.jpg",
+            "img02": "exp27.jpg",
+            "img03": "exp28.jpg",
+            "img04": "exp29.jpg"
+        },
+        {
+            "id": 6,
+            "nombre": "Boticas y IBK",
+            "descripcion": "Evento corporativo",
+            "img01": "exp30.jpg",
+            "img02": "exp31.jpg",
+            "img03": "exp32.jpg",
+            "img04": "exp33.jpg"
+        }
+    ]
+}

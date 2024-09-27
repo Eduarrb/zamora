@@ -1,42 +1,31 @@
 const expBox = document.querySelector('.experiencia__container__imgbox');
-const expModal = document.querySelector('.experienciaModal');
-const expModalClose = document.querySelector('.experienciaModal__box--close');
+// const expModal = document.querySelector('.experienciaModal');
 const menu = document.querySelector('.header__nav__menu');
 const iconMenu = document.querySelector('.header__nav__iconMenu');
 const menuContainer = document.querySelector('.header__nav__menu__container');
 
 const modalImgBox = document.querySelector('.experienciaModal__box__col__imgbox');
 
-modalImgBox.addEventListener('click', e => {
-    Array.from(modalImgBox.children).forEach(i => {
-        i.classList.remove('active');
-    });
-    console.log(e);
-    if(e.target.tagName === 'IMG') {
-        console.log('hiciste click')
-        e.target.parentElement.classList.add('active');
-    }
-})
+// modalImgBox.addEventListener('click', e => {
+//     Array.from(modalImgBox.children).forEach(i => {
+//         i.classList.remove('active');
+//     });
+//     if(e.target.tagName === 'IMG') {
+//         console.log('hiciste click')
+//         e.target.parentElement.classList.add('active');
+//     }
+// })
 
 iconMenu.addEventListener('click', () => {
     iconMenu.classList.toggle('active');
     menuContainer.classList.toggle('active');
 })
 
-expBox.addEventListener('click', e => {
-    if (
-        e.target.classList.contains(
-            'experiencia__container__imgbox__item--link'
-        )
-    ) {
-        e.preventDefault();
-        expModal.classList.add('active');
-    }
-});
 
-expModalClose.addEventListener('click', () => {
-    expModal.classList.remove('active');
-});
+
+// expModalClose.addEventListener('click', () => {
+//     expModal.classList.remove('active');
+// });
 
 window.addEventListener('keyup', e => {
     if (e.key === 'Escape') {

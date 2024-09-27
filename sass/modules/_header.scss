@@ -1,5 +1,5 @@
 .header {
-    background-image: url(../img/portada.png);
+    background: linear-gradient(to bottom, rgba(black, .8) 0%, rgba(black, .4) 100%), url(../img/portada2.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -157,6 +157,7 @@
             &--title {
                 height: 0;
                 width: 0;
+                opacity: 0;
             }
             img {
                 width: 60%;

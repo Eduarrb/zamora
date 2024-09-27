@@ -379,7 +379,7 @@ img {
 }
 
 .header {
-  background-image: url(../img/portada.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/portada2.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -538,6 +538,7 @@ img {
 .header__logo__container--title {
   height: 0;
   width: 0;
+  opacity: 0;
 }
 .header__logo__container img {
   width: 60%;
