@@ -379,7 +379,7 @@ img {
 }
 
 .header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/portada2.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/portada2.png);
   background-position: center;
   background-size: cover;
   height: 100vh;
