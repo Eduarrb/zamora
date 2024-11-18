@@ -941,6 +941,11 @@ img {
     width: 100%;
   }
 }
+.contacto__container__form .input__error {
+  color: #c0392b;
+  font-size: 1.6rem;
+  text-align: right;
+}
 .contacto__container__form__group:not(:last-child) {
   margin-bottom: 2.5rem;
 }

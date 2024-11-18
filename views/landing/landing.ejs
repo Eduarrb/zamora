@@ -1,0 +1,154 @@
+<header class="header" id="home">
+    <nav class="header__nav pt-3 pb-3">
+        <div class="header__nav__iconMenu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header__nav__top">
+            <div class="header__nav__top__container container">
+                <div class="header__nav__top__container__social">
+                    <div class="header__nav__top__container__social--title">siguenos</div>
+                    <div class="header__nav__top__container__social__icons">
+                        <a href="https://www.instagram.com/zamora.estructuras.temporales/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100082510328823" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="header__nav__top__container__contacto">
+                    <a href="https://wa.me/+51997130028" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:contacto@zamoraestructuras.pe">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav__menu">
+            <ul class="header__nav__menu__container container pt-2 pb-2">
+                <li class="header__nav__menu__container__item">
+                    <a href="#home" class="header__nav__menu__container__item--link">home</a>
+                </li>
+                <li class="header__nav__menu__container__item">
+                    <a href="#nosotros" class="header__nav__menu__container__item--link">nosotros</a>
+                </li>
+                <li class="header__nav__menu__container__item">
+                    <a href="#staff" class="header__nav__menu__container__item--link">staff</a>
+                </li>
+                <li class="header__nav__menu__container__item">
+                    <a href="#experiencia" class="header__nav__menu__container__item--link">experiencia</a>
+                </li>
+                <li class="header__nav__menu__container__item">
+                    <a href="#contacto" class="header__nav__menu__container__item--link">contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="header__logo">
+        <div class="header__logo__container container">
+            <h1 class="header__logo__container--title">Zamora</h1>
+            <img src="img/logo1.png" alt="Zamora">
+        </div>
+    </section>
+</header>
+<section class="nosotros pt-10 pb-10" id="nosotros">
+    <div class="nosotros__container container">
+        <aside class="nosotros__container__box">
+            <h2 class="nosotros__container__box--title">¿Quiénes somos?</h2>
+            <hr class="nosotros__container__box--line mt-3 mb-3">
+            <p class="nosotros__container__box--text">Somos un equipo profesional,comprometido con la excelencia de la calidad y servicio. Buscamos diseñar y complementar todos los proyectos de nuestros clientes con soluciones estructurales innovadoras,seguras y certificadas.</p>
+        </aside>
+    </div>
+</section>
+<section class="staff" id="staff">
+    <div class="staff__container container">
+        <aside class="staff__container__box">
+            <h2 class="staff__container__box--title mb-3">
+                <span>contamos</span> con
+            </h2>
+            <ul class="staff__container__box__ul">
+                <li class="staff__container__box__ul--item">El mejor staff profesional de arquitectos, ingenieros y montajistas a nivel nacional.</li>
+                <li class="staff__container__box__ul--item">La mejor infraestructura en el Perú para tu proyecto.</li>
+                <li class="staff__container__box__ul--item">El más destacado servicio personalizado.</li>
+                <li class="staff__container__box__ul--item">Estructura normada y certificada.</li>
+                <li class="staff__container__box__ul--item">Servicio de Riggingcon motores americanos.</li>
+            </ul>
+        </aside>
+    </div>
+</section>
+<section class="experiencia pt-10 pb-10" id="experiencia">
+    <div class="experiencia__container container">
+        <h2 class="experiencia__container--title mb-5">experiencia</h2>
+        <div class="experiencia__container__imgbox">
+           
+        </div>
+    </div>
+</section>
+<section class="marcas pt-10 pb-10 pl-2 pr-2">
+    <h2 class="marcas--title mb-5">Marcas que confian en <span>nosotros</span></h2>
+    <div class="marcas__box owl-carousel">
+        <div class="marcas__box__imgbox"><img src="img/marca01.png" alt="marca01"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca02.png" alt="marca02"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca03.png" alt="marca03"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca04.png" alt="marca04"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca05.png" alt="marca05"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca06.png" alt="marca06"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca07.png" alt="marca07"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca08.png" alt="marca08"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca09.png" alt="marca09"></div>
+        <div class="marcas__box__imgbox"><img src="img/marca10.png" alt="marca010"></div>
+    </div>
+</section>
+<section class="contacto pt-10 pb-10" id="contacto">
+    <div class="contacto__container container">
+        <h2 class="contacto__container--title mb-3">contactanos</h2>
+        <form class="contacto__container__form" method="post">
+            <input type="hidden" name="_csrf" value=<%- csrfToken %>>
+            <div class="contacto__container__form__group">
+                <input type="text" placeholder="Nombres" class="nombres">
+            </div>
+            <div class="input__error error__nombres"></div>
+            <div class="contacto__container__form__group">
+                <input type="text" placeholder="Apellidos" class="apellidos">
+            </div>
+            <div class="input__error error__apellidos"></div>
+            <div class="contacto__container__form__group">
+                <input type="text" placeholder="Empresa" class="empresa">
+            </div>
+            <div class="input__error error__empresa"></div>
+            <div class="contacto__container__form__group">
+                <input type="email" placeholder="Correo" class="correo">
+            </div>
+            <div class="input__error error__correo"></div>
+            <div class="contacto__container__form__group">
+                <textarea name="" id="" cols="30" rows="3" placeholder="Mensaje" class="mensaje"></textarea>
+            </div>
+            <div class="input__error error__mensaje"></div>
+            <div class="contacto__container__form__group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="footer pt-10 pb-10">
+    <div class="footer__container container">
+        <div class="footer__container__col">
+            <h2 class="footer__container__col--title">Acerca de nosotros</h2>
+            <p class="footer__container__col--descri">Brindar el mejor servicio y atención profesional, con la mejor calidad y acabado estructural para todo proyecto. En línea con la entrega oportuna en los plazos establecidos por nuestros clientes</p>
+        </div>
+        <div class="footer__container__col">
+            <h2 class="footer__container__col--title">Contacto</h2>
+            <div class="footer__container__col__box">
+                <h3 class="footer__container__col__box--title mb-1">Celular</h3>
+                <p class="footer__container__col__box--data mb-3">997 130 028</p>
+                <h3 class="footer__container__col__box--title mb-1">email</h3>
+                <a href="mailto:contacto@zamoraestructuras.pe" class="footer__container__col__box--data">contacto@zamoraestructuras.pe</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="experienciaModal">    
+</section>
