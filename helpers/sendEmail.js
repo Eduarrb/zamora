@@ -4,7 +4,7 @@ const sendMail = (email, asunto, msj) => {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
         const msg = {
             to: email, 
-            from: 'noreply@fablab-continental.com', 
+            from: 'noreply@zamoraestructuras.pe', 
             subject: asunto,
             html: msj
         };
