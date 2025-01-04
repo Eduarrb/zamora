@@ -9,7 +9,7 @@ const getLanding = (req, res) => {
 
 const postSendContact = async(req, res) => {
     try {
-        sendMail(req.body.correo, "Contacto", emailPlantilla(req.body.nombres, req.body.apellidos, req.body.empresa, req.body.mensaje));
+        sendMail("contacto@zamoraestructuras.pe", "Contacto", emailPlantilla(req.body.nombres, req.body.apellidos, req.body.empresa, req.body.mensaje));
         res.status(200).json('todo ok');
     } catch (error) {
         console.log(error)
